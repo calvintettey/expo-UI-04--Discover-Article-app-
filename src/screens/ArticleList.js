@@ -23,7 +23,7 @@ export default function ArticleList() {
     },
     {
       title:
-        "The Politician is a straight-up ’90s throwback of a Gen-X political message, but it’s about present-day Gen Zers",
+        "The Politician is a ’90s throwback of a Gen-X political message but about Gen Zers",
       storyImage: require("../../assets/politician.jpg"),
       writerName: "Emily VanDerWerff",
       writerImage: require("../../assets/newfilm.jpg"),
@@ -47,6 +47,7 @@ export default function ArticleList() {
           title + writerName + readTime
         }
         showsVerticalScrollIndicator={false}
+        
       />
     </View>
   );

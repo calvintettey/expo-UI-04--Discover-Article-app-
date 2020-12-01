@@ -18,8 +18,8 @@ export default function Article3() {
       />
       <View style={styles.cardDetails}>
         <Text style={styles.title}>
-          The Politician is a straight-up ’90s throwback of a Gen-X political
-          message, but it’s about present-day Gen Zers
+          The Politician is a ’90s throwback of a Gen-X political message but
+          about Gen Zers
         </Text>
 
         <View style={styles.writerInfo}>
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     paddingHorizontal: 18,
-    marginVertical: 20,
+    marginBottom: 10,
   },
 
   storyImage: {
