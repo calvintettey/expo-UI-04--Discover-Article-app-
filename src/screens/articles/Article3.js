@@ -11,7 +11,7 @@ import {
 const { width } = Dimensions.get("screen");
 export default function Article3() {
   return (
-    <View style={styles.container}>
+    <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
       <Image
         style={styles.storyImage}
         source={require("../../../assets/politician.jpg")}
@@ -75,7 +75,7 @@ export default function Article3() {
           world a better place.
         </Text>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 

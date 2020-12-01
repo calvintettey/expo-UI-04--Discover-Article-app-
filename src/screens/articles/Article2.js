@@ -11,7 +11,7 @@ import {
 const { width } = Dimensions.get("screen");
 export default function Article2() {
   return (
-    <View style={styles.container}>
+    <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
       <Image
         style={styles.storyImage}
         source={require("../../../assets/slack.jpg")}
@@ -62,7 +62,7 @@ export default function Article2() {
           it together.
         </Text>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 

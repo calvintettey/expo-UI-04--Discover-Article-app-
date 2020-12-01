@@ -11,7 +11,7 @@ import {
 const { width } = Dimensions.get("screen");
 export default function Article1() {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
       <Image
         style={styles.storyImage}
         source={require("../../../assets/ornithologist.jpg")}

@@ -11,19 +11,12 @@ import Profile from '../tabs/Profile';
 import Settings from '../tabs/Settings';
 
 
-const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 export default function DiscoverPage({ navigation }) {
     return (
         <View>
             <ArticleList/>
 
-            <Tab.Navigator>
-                <Tab.Screen name="Home" component={Home} />
-                <Tab.Screen name="Folder" component={Folder} />
-                <Tab.Screen name="Heart" component={Heart} />
-                <Tab.Screen name="Profile" component={Profile} />
-                <Tab.Screen name="Settings" component={Settings} />
-            </Tab.Navigator>
         </View>
     )
 }

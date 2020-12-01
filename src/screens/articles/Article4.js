@@ -12,7 +12,7 @@ const { width } = Dimensions.get("screen");
 
 export default function Article4() {
   return (
-    <View style={styles.container}>
+    <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
       <Image
         style={styles.storyImage}
         source={require("../../../assets/newfilm.jpg")}
@@ -95,7 +95,7 @@ export default function Article4() {
           darkness.
         </Text>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
