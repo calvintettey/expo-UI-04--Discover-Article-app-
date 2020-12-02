@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Text, View } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
-import DiscoverPage from "../screens/DiscoverPage";
 import { Fontisto } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
+import ArticleList from "../screens/ArticleList";
 
 const HomeStack = createStackNavigator();
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
           ),
         }}
         name="Discover"
-        component={DiscoverPage}
+        component={ArticleList}
       />
     </HomeStack.Navigator>
   );

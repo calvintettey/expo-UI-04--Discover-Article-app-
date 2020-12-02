@@ -12,6 +12,9 @@ export default function Heart() {
     <HeartStack.Navigator>
       <HeartStack.Screen
         options={{
+          headerTitleContainerStyle: {
+            width: "48%",
+          },
           headerTitleStyle: {
             // alignSelf: "left",
             fontFamily: "serif",

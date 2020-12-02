@@ -12,6 +12,9 @@ export default function Folder({ navigation }) {
     <FolderStack.Navigator>
       <FolderStack.Screen
         options={{
+          headerTitleContainerStyle: {
+            width: "48%",
+          },
           headerTitleStyle: {
             // alignSelf: "left",
             fontFamily: "serif",

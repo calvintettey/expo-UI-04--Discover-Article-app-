@@ -12,6 +12,9 @@ export default function Settings() {
     <SettingsStack.Navigator>
       <SettingsStack.Screen
         options={{
+          headerTitleContainerStyle: {
+            width: "48%",
+          },
           headerTitleStyle: {
             // alignSelf: "left",
             fontFamily: "serif",
