@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 import { FlatList, TouchableOpacity } from "react-native-gesture-handler";
 import ArticleCard from "./ArticleCard";
 
-export default function ArticleList({ navigation }) {
+export default function ArticleList({ route, navigation }) {
   const articles = [
     {
       title:
@@ -51,7 +51,7 @@ export default function ArticleList({ navigation }) {
       <FlatList
         data={articles}
         renderItem={({ item }) => (
-          <TouchableOpacity onPress={() => navigation.navigate("ArticleView")}>
+          <TouchableOpacity onPress={() => navigation.navigate("ArticleView", item)}>
             <ArticleCard {...item} />
           </TouchableOpacity>
         )}

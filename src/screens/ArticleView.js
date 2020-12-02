@@ -16,27 +16,28 @@ export default function ArticleView({
   writerName,
   writerImage,
   readTime,
-  story
+  story,
+  route,
 }) {
+  // const {title} = route.params
+
   return (
     <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
-      <Image style={styles.storyImage} source={storyImage} />
+      <Image style={styles.storyImage} source={route.params.storyImage} />
 
-      <Text style={styles.title}>{title}</Text>
+      <Text style={styles.title}>{route.params.title}</Text>
 
       <View style={styles.writerInfo}>
-        <Image style={styles.writerImage} source={writerImage} />
+        <Image style={styles.writerImage} source={route.params.writerImage} />
 
         <Text style={styles.writerName} numberOfLines={1}>
-          {writerName}
+          {route.params.writerName}
         </Text>
 
-        <Text style={styles.readTime}>{` | ${readTime} min`}</Text>
+        <Text style={styles.readTime}>{` | ${route.params.readTime} min`}</Text>
       </View>
 
-      <Text style={styles.story}>
-        {story}
-      </Text>
+      <Text style={styles.story}>{route.params.story}</Text>
     </ScrollView>
   );
 }
