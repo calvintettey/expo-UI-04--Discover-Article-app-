@@ -49,7 +49,7 @@ export default function Profile() {
             </View>
           ),
         }}
-        name="Article3"
+        name="The Politician Review"
         component={Article3}
       />
     </ProfileStack.Navigator>

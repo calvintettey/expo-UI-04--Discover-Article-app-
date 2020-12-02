@@ -49,7 +49,7 @@ export default function Heart() {
             </View>
           ),
         }}
-        name="Article2"
+        name="Slack For Friends"
         component={Article2}
       />
     </HeartStack.Navigator>

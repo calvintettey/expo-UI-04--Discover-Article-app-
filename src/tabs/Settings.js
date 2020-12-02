@@ -49,6 +49,7 @@ export default function Settings() {
             </View>
           ),
         }}
+        name="Film & TV"
         component={Article4}
         style={{ paddingHorizontal: 18 }}
       />
