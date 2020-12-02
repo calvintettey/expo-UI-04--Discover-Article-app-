@@ -12,6 +12,7 @@ import Profile from "./src/tabs/Profile";
 import Folder from "./src/tabs/Folder";
 import Heart from "./src/tabs/Heart";
 import ArticleView from "./src/screens/ArticleView";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -62,7 +63,8 @@ export default function App() {
           component={AllTabs}
         />
         <Stack.Screen
-          options={{
+          options={({navigation})=>{
+            return {
             headerTitleContainerStyle: {
               width: "48%",
             },
@@ -73,12 +75,14 @@ export default function App() {
               fontSize: 22,
             },
             headerLeft: () => (
+              <TouchableOpacity onPress={() => navigation.navigate("AllTabs")}>
               <Ionicons
                 name="ios-arrow-back"
                 size={24}
                 color="black"
                 style={{ paddingHorizontal: 18 }}
               />
+              </TouchableOpacity>
             ),
             headerRight: () => (
               <View style={{ flexDirection: "row" }}>
@@ -102,6 +106,7 @@ export default function App() {
                 />
               </View>
             ),
+          }
           }}
           name="ArticleView"
           component={ArticleView}
