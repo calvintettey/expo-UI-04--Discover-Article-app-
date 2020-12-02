@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Text, View, Dimensions } from "react-native";
+import { Text, View, Dimensions, TouchableWithoutFeedback } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Article3 from "../screens/articles/Article3";
 import { Ionicons } from "@expo/vector-icons";
@@ -7,7 +7,7 @@ import { Feather } from "@expo/vector-icons";
 
 const { width } = Dimensions.get("screen");
 
-const ProfileStack = createStackNavigator({navigate});
+const ProfileStack = createStackNavigator();
 
 export default function Profile() {
   return (
@@ -25,7 +25,7 @@ export default function Profile() {
           },
           headerLeft: () => (
             <Ionicons
-              onPress={() => navigation.goBack("Home")}
+              
               name="ios-arrow-back"
               size={24}
               color="black"

@@ -84,7 +84,6 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     paddingHorizontal: 18,
-    marginBottom: 10,
   },
 
   storyImage: {
